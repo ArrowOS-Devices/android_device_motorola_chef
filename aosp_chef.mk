@@ -24,6 +24,23 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 # Device
 $(call inherit-product, device/motorola/chef/device.mk)
 
+# Inherit some common AOSP stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+
+TARGET_BOOT_ANIMATION_RES := 1080
+ 
+# Set those variables here to overwrite the inherited values.
+BOARD_VENDOR := Motorola
+PRODUCT_BRAND := Motorola
+PRODUCT_DEVICE := chef
+PRODUCT_NAME := aosp_chef
+PRODUCT_MANUFACTURER := Motorola
+PRODUCT_MODEL := Moto One Power
+TARGET_VENDOR := Motorola
+PRODUCT_GMS_CLIENTID_BASE := android-motorola
+TARGET_MINIMAL_APPS := true
+TARGET_GAPPS_ARCH := arm64
+
 # A/B updater
 AB_OTA_UPDATER := true
 
