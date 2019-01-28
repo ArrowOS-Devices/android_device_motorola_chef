@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/pe_chef.mk
+    $(LOCAL_DIR)/aosp_chef.mk
