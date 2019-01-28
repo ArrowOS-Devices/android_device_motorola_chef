@@ -17,7 +17,6 @@
 # Inherit some common Lineage stuff.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 
-
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
@@ -82,14 +81,6 @@ ifeq ($(WITH_TWRP),true)
 else
     TARGET_RECOVERY_FSTAB := device/motorola/sdm660-common/rootdir/etc/fstab.qcom
 endif
-
-# Device identifiers
-PRODUCT_DEVICE := chef
-PRODUCT_NAME := lineage_chef
-PRODUCT_BRAND := motorola
-PRODUCT_MODEL := Motorola One Power
-PRODUCT_MANUFACTURER := Motorola
-PRODUCT_RELEASE_NAME := chef
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=chef
