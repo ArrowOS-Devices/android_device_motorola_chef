@@ -26,7 +26,7 @@ TARGET_OTA_ASSERT_DEVICE := chef
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 
 # Kernel
-TARGET_KERNEL_CONFIG := lineageos_chef_defconfig
+TARGET_KERNEL_CONFIG := chef_defconfig
 TARGET_KERNEL_SOURCE := kernel/motorola/sdm660
 TARGET_KERNEL_CLANG_COMPILE := true
 #BOARD_KERNEL_CMDLINE := androidboot.selinux=permissive
